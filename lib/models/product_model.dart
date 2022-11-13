@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class ProductModel {
   final int? id;
   final String? name;
@@ -6,6 +8,7 @@ class ProductModel {
   final int? price;
   final bool? isFavorite;
   final double? rate;
+  final Color? color;
 
   ProductModel({
     this.id,
@@ -15,6 +18,7 @@ class ProductModel {
     this.price,
     this.isFavorite = false,
     this.rate = 0.0,
+    this.color,
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
@@ -26,6 +30,7 @@ class ProductModel {
       price: json['price'],
       isFavorite: json['isFavorite'],
       rate: json['rate'],
+      color: json['color'],
     );
   }
 
@@ -38,6 +43,7 @@ class ProductModel {
       'price': price,
       'isFavorite': isFavorite,
       'rate': rate,
+      'color': color,
     };
   }
 }
@@ -51,7 +57,8 @@ List<ProductModel> mockProduct = [
     imageUrl: 'assets/illustration/chair.png',
     price: 50,
     isFavorite: true,
-    rate: 4.8,
+    rate: 3.0,
+    color: Colors.green,
   ),
   ProductModel(
     id: 2,
@@ -61,7 +68,8 @@ List<ProductModel> mockProduct = [
     imageUrl: 'assets/illustration/modern_table.png',
     price: 75,
     isFavorite: false,
-    rate: 4.6,
+    rate: 3.5,
+    color: Colors.red,
   ),
   ProductModel(
     id: 3,
@@ -72,6 +80,7 @@ List<ProductModel> mockProduct = [
     price: 240,
     isFavorite: false,
     rate: 5.0,
+    color: Colors.blue,
   ),
   ProductModel(
     id: 4,
@@ -81,6 +90,7 @@ List<ProductModel> mockProduct = [
     imageUrl: 'assets/illustration/brown_armchair.png',
     price: 210,
     isFavorite: false,
-    rate: 4.8,
+    rate: 3.9,
+    color: Colors.yellow,
   ),
 ];
