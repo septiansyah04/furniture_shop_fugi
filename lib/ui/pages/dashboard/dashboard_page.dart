@@ -84,6 +84,16 @@ class _DashboardPageState extends State<DashboardPage> {
               itemBuilder: (context, index) {
                 return CardProduct(
                   product: mockProduct[index],
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailProduct(
+                          product: mockProduct[index],
+                        ),
+                      ),
+                    );
+                  },
                 );
               },
             ),

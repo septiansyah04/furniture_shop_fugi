@@ -5,3 +5,4 @@ import 'package:furniture_shop_fugi/ui/widgets/widgets.dart';
 import 'package:iconly/iconly.dart';
 
 part 'dashboard_page.dart';
+part 'detail_product.dart';

@@ -78,7 +78,7 @@ List<ProductModel> mockProduct = [
     name: 'Brown Armchair',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
-    imageUrl: 'assets/illustration/modern_armchair.png',
+    imageUrl: 'assets/illustration/brown_armchair.png',
     price: 210,
     isFavorite: false,
     rate: 4.8,
